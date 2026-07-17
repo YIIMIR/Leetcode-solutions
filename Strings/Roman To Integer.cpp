@@ -25,7 +25,7 @@ public:
 
         for(int i=0;i<s.length();i++){
             c=s[i];
-            if (value(c)<value(s[i+1])){
+            if (value(c)<value(s[i+1]) && value(s[i]) < value(s[i + 1])){
                 sum=sum-value(c);
             }
             else{
